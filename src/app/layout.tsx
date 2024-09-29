@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en" className={`${GeistSans.variable} dark`}>
-        <body>
+        <body className="min-h-full w-full">
           <Navbar />
           <main>{children}</main>
         </body>
