@@ -20,7 +20,7 @@ export default function RootLayout({
       <html lang="en" className={`${GeistSans.variable} dark`}>
         <body className="min-h-full w-full">
           <Navbar />
-          <main>{children}</main>
+          <main className="flex items-center justify-center">{children}</main>
         </body>
       </html>
     </ClerkProvider>

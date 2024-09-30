@@ -9,39 +9,39 @@ export default function Navbar() {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0">
-              <Dumbbell className="text-primary h-8 w-8" />
+              <Dumbbell className="h-8 w-8 text-primary" />
               <span className="sr-only">Calisthenium</span>
             </Link>
           </div>
-          <div className="hidden flex-grow md:block">
+          <div className="flex-grow md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               <Link
                 href="/trainings"
-                className="text-foreground hover:bg-primary/10 hover:text-primary flex items-center rounded-md px-3 py-2 text-sm font-medium transition-colors duration-200"
+                className="flex items-center justify-center rounded-md px-1 py-2 text-sm font-medium text-foreground transition-colors duration-200 hover:bg-primary/10 hover:text-primary sm:px-3"
               >
-                <BarChart2 className="mr-2 h-4 w-4" />
-                My Trainings
+                <BarChart2 className="mr-2 h-6 w-6 sm:h-4 sm:w-4" />
+                <p className="hidden sm:block"> My Trainings </p>
               </Link>
               <Link
                 href="/avatar"
-                className="text-foreground hover:bg-primary/10 hover:text-primary flex items-center rounded-md px-3 py-2 text-sm font-medium transition-colors duration-200"
+                className="flex items-center justify-center rounded-md px-1 py-2 text-sm font-medium text-foreground transition-colors duration-200 hover:bg-primary/10 hover:text-primary sm:px-3"
               >
-                <User className="mr-2 h-4 w-4" />
-                My Avatar
+                <User className="mr-2 h-6 w-6 sm:h-4 sm:w-4" />
+                <p className="hidden sm:block"> My Avatar</p>
               </Link>
               <Link
                 href="/dashboard"
-                className="text-foreground hover:bg-primary/10 hover:text-primary flex items-center rounded-md px-3 py-2 text-sm font-medium transition-colors duration-200"
+                className="flex items-center justify-center rounded-md px-1 py-2 text-sm font-medium text-foreground transition-colors duration-200 hover:bg-primary/10 hover:text-primary sm:px-3"
               >
-                <LayoutDashboard className="mr-2 h-4 w-4" />
-                Dashboard
+                <LayoutDashboard className="mr-2 h-6 w-6 sm:h-4 sm:w-4" />
+                <p className="hidden sm:block"> Dashboard </p>
               </Link>
             </div>
           </div>
           <div className="flex items-center">
             <SignedOut>
               <SignInButton>
-                <button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-md px-4 py-2 text-sm font-medium transition-colors duration-200">
+                <button className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors duration-200 hover:bg-primary/90">
                   Sign In
                 </button>
               </SignInButton>
