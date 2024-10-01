@@ -23,7 +23,7 @@ export default function MyAvatarPage() {
   );
 }
 
-export const Experience = () => {
+const Experience = () => {
   return (
     <>
       <OrbitControls />

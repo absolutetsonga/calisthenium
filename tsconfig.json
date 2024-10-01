@@ -19,8 +19,9 @@
       "ES2022"
     ],
     "noEmit": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
+    "module": "esnext",
+    "moduleResolution": "Bundler",
+    "allowImportingTsExtensions": true,
     "jsx": "preserve",
     "plugins": [
       {

@@ -1,7 +1,10 @@
 import React from "react";
 import { useGLTF } from "@react-three/drei";
 
-export const Avatar = (props: any) => {
+type AvatarProps = {
+  scale: [number, number, number];
+};
+export const Avatar = (props: AvatarProps) => {
   const { nodes, materials } = useGLTF("/guy-transformed.glb");
   return (
     <group {...props} dispose={null}>
