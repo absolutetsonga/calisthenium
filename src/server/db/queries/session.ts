@@ -4,7 +4,7 @@ import { db } from "..";
 import { sessions } from "../schema";
 import { and, eq } from "drizzle-orm";
 import { AuthenticationService } from "../auth-checker";
-import { ICreateSession } from "~/lib/models";
+import type { ICreateSession } from "~/lib/models";
 
 
 class SessionService extends AuthenticationService {
